@@ -307,56 +307,7 @@
 	<link rel="icon" href="/logo-ic.png" sizes="32x32">
 	<link rel="icon" href="/logo-ic.png" sizes="192x192">
 	<link rel="apple-touch-icon-precomposed" href="/logo-ic.png">
-	<style>
-		/*yandex map*/
-
-		#map {
-			width: 100%;
-			height: 500px;
-		}
-
-		.ymaps-2-1-72-zoom {
-			filter: invert(95%) grayscale(90%);
-			-ms-filter: invert(95%) grayscale(90%);
-			-webkit-filter: invert(95%) grayscale(90%);
-			-moz-filter: invert(95%) grayscale(90%);
-			-o-filter: invert(95%) grayscale(90%);
-		}
-
-
-		.ymaps-2-1-75-ground-pane {
-			filter: invert(95%) grayscale(90%);
-			-ms-filter: invert(95%) grayscale(90%);
-			-webkit-filter: invert(95%) grayscale(90%);
-			-moz-filter: invert(95%) grayscale(90%);
-			-o-filter: invert(95%) grayscale(90%);
-		}
-
-		/*yandex map*/
-	</style>
 </head>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script>
-	ymaps.ready(function () {
-
-		var myMap = new ymaps.Map('map', {
-			center: [41.33301140648679, 69.2830376789561],
-			controls: ['fullscreenControl'],
-			zoom: 17
-		});
-		myMap.controls.add('zoomControl', {
-			size: "small",
-		});
-		myMap.behaviors.disable('scrollZoom');
-		myMap.geoObjects
-			.add(new ymaps.Placemark([41.33301140648679, 69.2830376789561], {
-				iconCaption: 'Grand Lion Architecture & Design'
-			}, {
-				preset: 'islands#dotIcon',
-				iconColor: '#cfaf4e',
-			}))
-	});
-</script>
 
 <body
 	class="page-template-default page page-id-11851 page-child parent-pageid-9246 custom-background theme-interico siteorigin-panels siteorigin-panels-before-js woocommerce-no-js wp-featherlight-captions header-style-1 subnav-fullwidth subnav-dark subnav-content-right header-typography-style-3 submenu-dark body-dark custom-colors">
@@ -430,7 +381,7 @@
 										</li>
 										<li id="menu-item-8582"
 											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8582">
-											<a href="#about" onclick="slowScroll('#about')">О &nbsp; Нас</a>
+											<a href="./index.html#about" onclick="slowScroll('#about')">О &nbsp; Нас</a>
 										</li>
 
 
@@ -665,7 +616,7 @@
 					Мы вам перезвоним ! </h2>
 			</div>
 		</a>
-		<div class="ymaps-layers-pane" id="map"></div>
+
 		<footer id="footer" class="footer-dark">
 			<div class="main-footer">
 				<div class="container">
